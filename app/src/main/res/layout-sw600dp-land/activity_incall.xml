@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	    
+    <!-- Other calls layout -->
+
+    <LinearLayout
+        android:id="@+id/callThumbnails"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="vertical">
+            
+        <include
+            android:id="@+id/addCallThumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/add_call_thumbnail"/>
+
+    </LinearLayout>
+    
+	<!-- Divider -->
+	<View
+	    android:id="@+id/divider"
+	    android:layout_width="1dp"
+	    android:layout_height="match_parent"
+	    android:layout_marginRight="1dp"
+	    android:layout_toRightOf="@id/callThumbnails"
+	    android:background="@color/separator_grey"/>
+
+    <LinearLayout
+        android:id="@+id/switches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/divider"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <ImageButton
+            style="@style/ButtonBorderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/ic_camera_switch"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            style="@style/ButtonBorderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@drawable/ic_camera_switch"
+            android:visibility="invisible"/>
+        
+        <ImageButton
+            android:id="@+id/btnAnswerCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/answer_call_button"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_end_call"/>
+
+        <include
+            android:id="@+id/switchPiP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            layout="@layout/pip_toggle_button"/>
+
+        <include
+            android:id="@+id/switchMute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            layout="@layout/mute_toggle_button"/>
+        
+        <include
+            android:id="@+id/switchMuteVideo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            layout="@layout/video_toggle_button"/>
+            
+        <include
+         	android:id="@+id/switchHold"
+         	android:layout_width="0dp"
+         	android:layout_height="wrap_content"
+         	android:layout_marginBottom="5dp"
+         	android:layout_marginTop="5dp"
+         	android:layout_weight="1"
+         	layout="@layout/hold_toggle_button"/>
+
+        <include
+            android:id="@+id/switchSpeaker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            layout="@layout/speaker_toggle_button"/>
+        
+        <include
+            android:id="@+id/switchBluetooth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            layout="@layout/bt_toggle_button"/>
+
+        <include
+            android:id="@+id/switchDTMF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            layout="@layout/keypad_toggle_button"/>
+        
+        <include
+            android:id="@+id/switchCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            layout="@layout/camera_toggle_button"/>
+
+        <include
+            android:id="@+id/switchTorch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            layout="@layout/torch_toggle_button"/>
+
+        <ImageButton
+            android:id="@+id/btnEndCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/end_call_button"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_end_call"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/callDetailsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/divider"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/labelRemoteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/labelStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_status_dialling"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/videoFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/switches"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/divider"
+        android:padding="5dp"
+        android:visibility="gone">
+
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/remoteCallHeld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/call_held"/>
+
+    <TableLayout
+        android:id="@+id/dtmfKeypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/dtmfDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:ellipsize="start"
+            android:gravity="right"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_1"
+                android:tag="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_2"
+                android:tag="2"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_3"
+                android:tag="3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_4"
+                android:tag="4"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_5"
+                android:tag="5"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_6"
+                android:tag="6"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_7"
+                android:tag="7"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_8"
+                android:tag="8"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_9"
+                android:tag="9"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_star"
+                android:tag="*"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_0_no_plus"
+                android:tag="0"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_hash"
+                android:tag="#"/>
+            
+        </TableRow>
+        
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    
+    <style name="ButtonDefault" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    
+    <style name="ButtonBorderless">
+        <item name="android:background">@drawable/item_background</item>
+	</style>
+	
+    <style name="ButtonTiny">
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+	
+    <style name="ButtonTinyDark" parent="@style/ButtonTiny">
+        <item name="android:background">@drawable/btn_dark</item>
+    </style>
+    
+    <style name="ImageToggleButton" parent="@style/ButtonBorderless">
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>

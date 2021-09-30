@@ -1,0 +1,141 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.alicecallsbob.csdk.android.sample"
+4    android:versionCode="1"
+5    android:versionName="3.3.22" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+10
+11    <uses-feature android:name="android.hardware.camera.any" />
+11-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:5:5-64
+11-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:5:19-61
+12    <uses-feature android:name="android.hardware.camera.autofocus" />
+12-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:6:5-70
+12-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:6:19-67
+13    <uses-feature android:name="android.hardware.bluetooth" />
+13-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:7:5-63
+13-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:7:19-60
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:9:5-67
+15-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:10:5-71
+16-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:10:22-68
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:11:5-65
+17-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:11:22-62
+18    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+18-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:12:5-80
+18-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:12:22-77
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:13:5-79
+19-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:14:5-68
+20-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:14:22-65
+21    <uses-permission android:name="android.permission.BLUETOOTH" />
+21-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:15:5-67
+21-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:15:22-65
+22    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+22-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:16:5-73
+22-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:16:22-71
+23    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+23-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:17:5-74
+23-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:17:22-72
+24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+24-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:18:5-74
+24-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:18:22-72
+25    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+25-->[android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:21:5-81
+25-->[android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:21:22-78
+26    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27
+28    <application
+28-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:20:5-52:19
+29        android:name="com.alicecallsbob.csdk.android.sample.CSDKSample"
+29-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:21:9-34
+30        android:allowBackup="true"
+30-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:22:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:22:18-86
+32        android:debuggable="true"
+33        android:icon="@drawable/ic_launcher"
+33-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:23:9-45
+34        android:label="@string/app_name"
+34-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:24:9-41
+35        android:testOnly="true"
+36        android:usesCleartextTraffic="true" >
+36-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:25:9-44
+37        <activity
+37-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:26:9-33:20
+38            android:name="com.alicecallsbob.csdk.android.sample.LoginActivity"
+38-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:26:19-85
+39            android:label="@string/app_name"
+39-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:27:13-45
+40            android:windowSoftInputMode="adjustResize|stateVisible" >
+40-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:28:13-68
+41            <intent-filter>
+41-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:29:13-32:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:30:17-68
+42-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:30:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:31:17-76
+44-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:31:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity android:name="com.alicecallsbob.csdk.android.sample.Main" />
+47-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:34:9-78
+47-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:34:19-76
+48        <activity
+48-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:35:9-37:46
+49            android:name="com.alicecallsbob.csdk.android.sample.InCallActivity"
+49-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:35:19-86
+50            android:launchMode="singleTask"
+50-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:37:13-44
+51            android:supportsPictureInPicture="true" />
+51-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:36:13-52
+52        <activity
+52-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:38:9-39:60
+53            android:name="com.alicecallsbob.csdk.android.sample.AboutActivity"
+53-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:38:19-85
+54            android:label="@string/title_activity_about" />
+54-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:39:13-57
+55        <activity
+55-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:40:9-41:65
+56            android:name="com.alicecallsbob.csdk.android.sample.ResolutionActivity"
+56-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:40:19-90
+57            android:label="@string/title_activity_resolution" />
+57-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:41:13-62
+58        <activity
+58-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:42:9-43:71
+59            android:name="com.alicecallsbob.csdk.android.sample.CameraSelectionActivity"
+59-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:42:19-95
+60            android:label="@string/title_activity_camera_selection" />
+60-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:43:13-68
+61        <activity
+61-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:44:9-45:77
+62            android:name="com.alicecallsbob.csdk.android.sample.SelectMediaDirectionActivity"
+62-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:44:19-100
+63            android:label="@string/title_activity_select_media_direction" />
+63-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:45:13-74
+64
+65        <service android:name="com.alicecallsbob.csdk.android.sample.RingtoneBackgroundService" />
+65-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:47:9-49:11
+65-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:48:13-91
+66
+67        <uses-library
+67-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:51:9-87
+68            android:name="org.apache.http.legacy"
+68-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:51:23-60
+69            android:required="false" />
+69-->/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:51:61-85
+70    </application>
+71
+72</manifest>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/switches"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        tools:visibility="gone">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/btnAnswerCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/answer_call_button"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/ic_end_call"
+                    android:visibility="invisible" />
+
+                <include
+                    android:id="@+id/switchMute"
+                    layout="@layout/mute_toggle_button"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <include
+                    android:id="@+id/switchMuteVideo"
+                    layout="@layout/video_toggle_button"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <include
+                    android:id="@+id/switchTorch"
+                    layout="@layout/torch_toggle_button"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <include
+                    android:id="@+id/switchPiP"
+                    layout="@layout/pip_toggle_button"
+                    android:gravity="center_vertical|center_horizontal" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <include
+                android:id="@+id/switchSpeaker"
+                layout="@layout/speaker_toggle_button"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <include
+                android:id="@+id/switchBluetooth"
+                layout="@layout/bt_toggle_button"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <include
+                android:id="@+id/switchDTMF"
+                layout="@layout/keypad_toggle_button"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <include
+                android:id="@+id/switchHold"
+                layout="@layout/hold_toggle_button"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <include
+                android:id="@+id/switchCamera"
+                layout="@layout/camera_toggle_button"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnEndCall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:background="@drawable/end_call_button"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/ic_end_call" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/callDetailsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/switches"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/labelRemoteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/labelStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_status_dialling"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/callQualityBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/switches"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/call_quality_progressbar"
+        tools:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/videoFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/callQualityBar"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/switches"
+        android:visibility="visible"></RelativeLayout>
+
+    <ImageView
+        android:id="@+id/remoteCallHeld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/call_held"
+        tools:visibility="gone" />
+
+    <TableLayout
+        android:id="@+id/dtmfKeypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/dtmfDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:ellipsize="start"
+            android:gravity="right"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_1"
+                android:tag="1"/>
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_2"
+                android:tag="2"/>
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_3"
+                android:tag="3"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_4"
+                android:tag="4"/>
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_5"
+                android:tag="5"/>
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_6"
+                android:tag="6"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_7"
+                android:tag="7"/>
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_8"
+                android:tag="8"/>
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_9"
+                android:tag="9"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_star"
+                android:tag="*"/>
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_0_no_plus"
+                android:tag="0"/>
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_hash"
+                android:tag="#"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

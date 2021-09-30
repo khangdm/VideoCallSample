@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout-land/activity_incall.xml" value="0.17291666666666666" />
+        <entry key="app/src/main/res/layout/activity_incall.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_incall_pip.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/add_call_thumbnail.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/aed_connect_topic_dialog.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/aed_topic_list_item.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/call_thumbnail_selected.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/fragment_dialer.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/video_toggle_button.xml" value="0.228125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11 (2)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

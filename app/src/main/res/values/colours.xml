@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="end_call_button_default">#c00</color>
+    <color name="end_call_button_pressed">#600</color>
+    <color name="answer_call_button_default">#39b54a</color>
+    <color name="answer_call_button_pressed">#026a10</color>
+    <color name="separator_grey">#3f3f3f</color>
+    
+    <color name="tp_dark_blue">#143593</color>
+    <color name="tp_mid_blue">#4B80B6</color>
+    <color name="tp_light_blue">#82A1CD</color>
+    
+    <color name="tp_light_grey">#A9A9A9</color>
+    
+    <color name="tp_highlight">#ff8c00</color>
+    
+    <color name="video_highlight">#11FFFFFF</color>
+    
+    <color name="call_quality_background">#c00</color>
+    <color name="call_quality_progress">#008000</color>
+    
+</resources>

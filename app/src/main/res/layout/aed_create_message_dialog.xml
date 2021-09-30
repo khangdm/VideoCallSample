@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:gravity="top|left"
+    android:hint="@string/aed_create_message_dialog_hint"
+    android:imeOptions="actionSend"
+    android:inputType="text"/>
+

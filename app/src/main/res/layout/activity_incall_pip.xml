@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/callDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/tp_light_blue"
+            android:text="Activity in call pip"/>
+
+        <TextView
+            android:id="@+id/labelRemoteName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/labelStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_status_dialling"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+	    
+    <!-- Other calls layout -->
+
+    <LinearLayout
+        android:id="@+id/switchesBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        tools:visibility="visible">
+
+        <include
+            android:id="@+id/switchSpeaker"
+            layout="@layout/speaker_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/switchBluetooth"
+            layout="@layout/bt_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/switchDTMF"
+            layout="@layout/keypad_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/switchCamera"
+            layout="@layout/camera_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/switchTorch"
+            layout="@layout/torch_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    
+	<!-- Divider -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/switchesBottom"
+        android:layout_marginTop="1dp"
+        android:background="@color/separator_grey"
+        tools:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/switchesTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divider"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/btnAnswerCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/answer_call_button"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ic_end_call"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnEndCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/end_call_button"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ic_end_call" />
+
+        <include
+            android:id="@+id/switchMute"
+            layout="@layout/mute_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/switchMuteVideo"
+            layout="@layout/video_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/switchHold"
+            layout="@layout/hold_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/switchPiP"
+            layout="@layout/pip_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    
+    <TableLayout
+        android:id="@+id/dtmfKeypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/switchesTop"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/dtmfDigits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@android:drawable/editbox_dropdown_dark_frame"
+            android:ellipsize="start"
+            android:gravity="right"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_1"
+                android:tag="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_2"
+                android:tag="2"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_3"
+                android:tag="3"/>
+            
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_4"
+                android:tag="4"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_5"
+                android:tag="5"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_6"
+                android:tag="6"/>
+            
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_7"
+                android:tag="7"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_8"
+                android:tag="8"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_9"
+                android:tag="9"/>
+            
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_star"
+                android:tag="*"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_0_no_plus"
+                android:tag="0"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonDefault"
+                android:onClick="onDtmfKeyClick"
+                android:src="@drawable/btn_number_hash"
+                android:tag="#"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ProgressBar
+        android:id="@+id/callQualityBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/switchesTop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/call_quality_progressbar"
+        tools:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/videoFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/callQualityBar"
+        android:layout_alignParentTop="true"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="1dp"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/remoteCallHeld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/call_held"
+        tools:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DialerFragment">
+    
+    <include layout="@layout/active_calls_bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:id="@+id/dial_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_1"/>
+
+            <ImageButton
+                android:id="@+id/button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_2"/>
+
+            <ImageButton
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_3"/>
+            
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_4"/>
+
+            <ImageButton
+                android:id="@+id/button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_5"/>
+
+            <ImageButton
+                android:id="@+id/button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_6"/>
+            
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_7"/>
+
+            <ImageButton
+                android:id="@+id/button_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_8"/>
+
+            <ImageButton
+                android:id="@+id/button_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_9"/>
+            
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_star"/>
+
+            <ImageButton
+                android:id="@+id/button_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_0"/>
+
+            <ImageButton
+                android:id="@+id/button_hash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_number_hash"/>
+            
+        </TableRow>
+        
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/dial_pad"
+        android:layout_alignRight="@id/dial_pad"
+        android:layout_below="@id/dial_pad">
+
+        <ImageButton
+            android:id="@+id/btnMakeCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/ic_audio_call"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/desitnationLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dial_pad"
+        android:layout_alignLeft="@id/dial_pad"
+        android:layout_alignRight="@id/dial_pad"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        
+        <EditText 
+            android:id="@+id/tvNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="@string/phone_number_hint"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:background="@android:color/white"
+            android:textColor="@color/tp_dark_blue"
+            android:textColorHint="@color/tp_light_blue"
+            android:inputType="textUri"
+            android:imeOptions="actionUnspecified"/>
+
+        <ImageView
+            android:id="@+id/deleteDigit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@android:drawable/ic_input_delete"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

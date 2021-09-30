@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alicecallsbob.csdk.android.sample">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.bluetooth" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name="CSDKSample"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.alicecallsbob.csdk.android.sample.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alicecallsbob.csdk.android.sample.Main"/>
+        <activity android:name="com.alicecallsbob.csdk.android.sample.InCallActivity"
+            android:supportsPictureInPicture="true"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.alicecallsbob.csdk.android.sample.AboutActivity"
+            android:label="@string/title_activity_about" />
+        <activity android:name="com.alicecallsbob.csdk.android.sample.ResolutionActivity"
+            android:label="@string/title_activity_resolution" />
+        <activity android:name="com.alicecallsbob.csdk.android.sample.CameraSelectionActivity"
+            android:label="@string/title_activity_camera_selection" />
+        <activity android:name="com.alicecallsbob.csdk.android.sample.SelectMediaDirectionActivity"
+            android:label="@string/title_activity_select_media_direction" />        
+        
+        <service
+            android:name="com.alicecallsbob.csdk.android.sample.RingtoneBackgroundService"
+        />
+        
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+
+</manifest>

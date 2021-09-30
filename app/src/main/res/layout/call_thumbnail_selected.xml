@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/active_thumbnail_item"
+    android:gravity="center"
+    android:onClick="onThumbnailClick"
+    tools:context=".InCallActivity">
+
+    <ImageView
+        android:id="@+id/thumbnailImage"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_contact_picture"
+        tools:ignore="ContentDescription"/>
+    
+    <ImageView android:id="@+id/thumbnailStatus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@id/thumbnailImage"
+        android:layout_alignLeft="@id/thumbnailImage"
+        android:src="@drawable/ic_call_status_active"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/thumbnailText"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thumbnailImage"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:lines="2"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+    
+    <ProgressBar
+	    android:id="@+id/callQualityBar"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:progressDrawable="@drawable/call_quality_progressbar"         
+	    android:layout_width="70dp"
+	    android:layout_height="10dp"
+	    android:layout_below="@id/thumbnailText"
+	    android:max="100"
+	    android:progress="100" />
+
+
+</RelativeLayout>

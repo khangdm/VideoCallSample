@@ -1,0 +1,277 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:2:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/2ab9f694e5d3af64949140461960b743/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c82a9eca41089f3a6896ea573cfccd87/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/01a78cf554e6c4441512374e19a94070/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/cafdcb56cd064bbf622135f61bb6ed84/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/7cbfbaaa39ecb82620bffe2588206993/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/fb1a0924cbad762d0f581f6d187fd952/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c6e778544c3daa9334b7e39d7723ab0b/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/390fba7780f75f3935d6793c0cae2473/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/868c4b7ee3ddc9bf7e171c26bc1832bd/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/092a3e2c794826840c7bdfa866a4ff56/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/a47101ded039236e94007b8beb4d0848/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/02762fa41652d52d9fee565fa6e98d0d/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c523d7266f112830516f47157eeaf9c5/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/86c84a825357d05c2f724246490a8df6/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/ca96f6182f57510854af9a656e5790c4/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/b33061385d67b982bb885113b832fc1e/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/01df92b7300672a5ff8664dc3764ee51/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/5586921ae4cea2e46fb71f72d59033a3/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/5a0ff6eba4a0ab8a5ff2db13b6b96742/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/d905bd4d37713ddb7e2a558cb611c465/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/0f9f9612216e1658ded37de1f7493c8e/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/db70915db5482881b82db5efafd295dc/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e8a9ba95fcf0cc98ab87a4d17d4050b7/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+	package
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:3:5-52
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera.any
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:5:5-64
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:11:5-64
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:11:5-64
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:5:19-61
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:6:5-70
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:12:5-70
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:12:5-70
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:6:19-67
+uses-feature#android.hardware.bluetooth
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:7:5-63
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:13:5-63
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:13:5-63
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:7:19-60
+uses-permission#android.permission.INTERNET
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:9:5-67
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:16:5-67
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:9:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:10:5-71
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:10:22-68
+uses-permission#android.permission.CAMERA
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:11:5-65
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:15:5-65
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:15:5-65
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:11:22-62
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:12:5-80
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:19:5-80
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:12:22-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:14:5-68
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:14:22-65
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:15:5-67
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:17:5-68
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:15:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:16:5-73
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:18:5-74
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:18:5-74
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:16:22-71
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:17:5-74
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:20:5-75
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:20:5-75
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:17:22-72
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:18:5-74
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:18:22-72
+application
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:20:5-52:19
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:23:5-26:19
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:23:5-26:19
+MERGED from [androidx.core:core:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:22:18-86
+	android:hasCode
+		REJECTED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:25:9-31
+	android:label
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:24:9-41
+	android:icon
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:23:9-45
+	android:allowBackup
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:22:9-35
+	android:usesCleartextTraffic
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:25:9-44
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:21:9-34
+activity#com.alicecallsbob.csdk.android.sample.LoginActivity
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:26:9-33:20
+	android:label
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:27:13-45
+	android:windowSoftInputMode
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:28:13-68
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:26:19-85
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:29:13-32:29
+action#android.intent.action.MAIN
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:30:17-68
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:31:17-76
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:31:27-74
+activity#com.alicecallsbob.csdk.android.sample.Main
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:34:9-78
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:34:19-76
+activity#com.alicecallsbob.csdk.android.sample.InCallActivity
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:35:9-37:46
+	android:launchMode
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:37:13-44
+	android:supportsPictureInPicture
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:36:13-52
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:35:19-86
+activity#com.alicecallsbob.csdk.android.sample.AboutActivity
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:38:9-39:60
+	android:label
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:39:13-57
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:38:19-85
+activity#com.alicecallsbob.csdk.android.sample.ResolutionActivity
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:40:9-41:65
+	android:label
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:41:13-62
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:40:19-90
+activity#com.alicecallsbob.csdk.android.sample.CameraSelectionActivity
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:42:9-43:71
+	android:label
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:43:13-68
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:42:19-95
+activity#com.alicecallsbob.csdk.android.sample.SelectMediaDirectionActivity
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:44:9-45:77
+	android:label
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:45:13-74
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:44:19-100
+service#com.alicecallsbob.csdk.android.sample.RingtoneBackgroundService
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:47:9-49:11
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:48:13-91
+uses-library#org.apache.http.legacy
+ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:51:9-87
+	android:required
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:51:61-85
+	android:name
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:51:23-60
+uses-sdk
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:7:5-9:41
+MERGED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/2ab9f694e5d3af64949140461960b743/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/2ab9f694e5d3af64949140461960b743/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c82a9eca41089f3a6896ea573cfccd87/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c82a9eca41089f3a6896ea573cfccd87/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/01a78cf554e6c4441512374e19a94070/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/01a78cf554e6c4441512374e19a94070/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/cafdcb56cd064bbf622135f61bb6ed84/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/cafdcb56cd064bbf622135f61bb6ed84/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/7cbfbaaa39ecb82620bffe2588206993/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/7cbfbaaa39ecb82620bffe2588206993/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/fb1a0924cbad762d0f581f6d187fd952/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/fb1a0924cbad762d0f581f6d187fd952/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c6e778544c3daa9334b7e39d7723ab0b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c6e778544c3daa9334b7e39d7723ab0b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/390fba7780f75f3935d6793c0cae2473/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/390fba7780f75f3935d6793c0cae2473/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/868c4b7ee3ddc9bf7e171c26bc1832bd/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/868c4b7ee3ddc9bf7e171c26bc1832bd/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/092a3e2c794826840c7bdfa866a4ff56/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/092a3e2c794826840c7bdfa866a4ff56/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/a47101ded039236e94007b8beb4d0848/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/a47101ded039236e94007b8beb4d0848/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/02762fa41652d52d9fee565fa6e98d0d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/02762fa41652d52d9fee565fa6e98d0d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c523d7266f112830516f47157eeaf9c5/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/c523d7266f112830516f47157eeaf9c5/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/9902be9b1aac21e364b85501bd7541d0/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/ab0971dc0418d312ad5e60792163f1ea/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/86c84a825357d05c2f724246490a8df6/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/86c84a825357d05c2f724246490a8df6/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/ca96f6182f57510854af9a656e5790c4/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/ca96f6182f57510854af9a656e5790c4/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/b33061385d67b982bb885113b832fc1e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/b33061385d67b982bb885113b832fc1e/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/01df92b7300672a5ff8664dc3764ee51/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/01df92b7300672a5ff8664dc3764ee51/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/5586921ae4cea2e46fb71f72d59033a3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/5586921ae4cea2e46fb71f72d59033a3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/5a0ff6eba4a0ab8a5ff2db13b6b96742/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/5a0ff6eba4a0ab8a5ff2db13b6b96742/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/d905bd4d37713ddb7e2a558cb611c465/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/d905bd4d37713ddb7e2a558cb611c465/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/0f9f9612216e1658ded37de1f7493c8e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/0f9f9612216e1658ded37de1f7493c8e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/db70915db5482881b82db5efafd295dc/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/db70915db5482881b82db5efafd295dc/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e8a9ba95fcf0cc98ab87a4d17d4050b7/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e8a9ba95fcf0cc98ab87a4d17d4050b7/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+		ADDED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:21:5-81
+	android:name
+		ADDED from [android-sdk-release.aar] /Users/khangdm/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml:21:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/AndroidManifest.xml:2:1-54:12 reason: com.alicecallsbob.fcsdk.android requested WRITE_EXTERNAL_STORAGE

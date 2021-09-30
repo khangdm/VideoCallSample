@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".DialerFragment">
+
+    <include layout="@layout/active_calls_bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/desitnationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activeCallsBar"
+        android:background="@android:color/white"
+        android:windowSoftInputMode="stateVisible">
+
+        <EditText 
+            android:id="@+id/tvNumber"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="@string/phone_number_hint"
+            android:padding="5dp"
+            android:textColor="@color/tp_dark_blue"
+            android:textColorHint="@color/tp_light_blue"
+            android:inputType="textUri"
+            android:imeOptions="actionUnspecified"
+            android:imeActionLabel="Make a Call"/>
+
+        <ImageView
+            android:id="@+id/deleteDigit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_input_delete"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/dial_pad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/desitnationLayout"
+        android:layout_centerHorizontal="true"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/button_1"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_1"/>
+
+            <ImageButton
+                android:id="@+id/button_2"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_2"/>
+
+            <ImageButton
+                android:id="@+id/button_3"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_3"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/button_4"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_4"/>
+
+            <ImageButton
+                android:id="@+id/button_5"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_5"/>
+
+            <ImageButton
+                android:id="@+id/button_6"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_6"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/button_7"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_7"/>
+
+            <ImageButton
+                android:id="@+id/button_8"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_8"/>
+
+            <ImageButton
+                android:id="@+id/button_9"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_9"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/button_star"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_star"/>
+
+            <ImageButton
+                android:id="@+id/button_0"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_0"/>
+
+            <ImageButton
+                android:id="@+id/button_hash"
+                style="@style/ButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_number_hash"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3">
+
+                <ImageButton
+                    android:id="@+id/btnMakeCall"
+                    style="@style/ButtonDefault"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_audio_call"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

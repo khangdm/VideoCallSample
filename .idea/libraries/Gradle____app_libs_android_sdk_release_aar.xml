@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/android-sdk-release.aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b447eb584f411d0cd28dbcdac7465e7/jetified-android-sdk-release/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/jars/libs/webrtc-android.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/jars/libs/httpclient-4.5.8.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/jars/libs/rs.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e5a5f64d1efc95a86879b7b4674da249/jetified-android-sdk-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

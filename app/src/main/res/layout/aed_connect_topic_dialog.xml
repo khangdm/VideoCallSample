@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/aedConnectDialogName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="5"
+        android:hint="@string/aed_dialog_name_hint"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aedConnectDialogName"
+        android:padding="5dp"
+        android:text="@string/aed_create_topic_expiry_label"/>
+
+    <EditText
+        android:id="@+id/aedConnectDialogExpiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/aedConnectDialogName"
+        android:layout_toRightOf="@id/label"
+        android:ems="5"
+        android:inputType="number"/>
+
+</RelativeLayout>

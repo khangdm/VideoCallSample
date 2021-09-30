@@ -1,0 +1,33 @@
+<resources>
+
+    <!--
+    	Strings related to login
+   	-->
+   	<string name="login_host_label">Host:</string>
+   	<string name="login_secure_label">Secure</string>
+   	<string name="login_cookies_label">Use Cookies</string>
+    <string name="login_renegotiation_label">Supports Renegotiation</string>
+    <string name="prompt_user">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    
+    <string name="error_secure_address">Client SDK for Android cannot handle secure communication</string>
+    <string name="error_host_and_address_not_matched">Host name doesn\'t match the address, which is correct?</string>
+    <string name="error_valid_host_required">A valid host name is required</string>
+    <string name="error_field_required">This field is required</string>
+    
+    <string name="login_failed_to_connect">Login failed, unable to connect to the server</string>
+    <string name="login_failed_to_login">Login failed, one or more login credentials are wrong</string>
+
+    <!--
+    	Server URL components
+   	-->
+   	<string name="host_name_hint">gateway-host</string>
+    <!-- Production system -->
+    <!-- Porth-dev -->
+    <string name="host_address_insecure">http://%s:8080/csdk-sample/SDK/login</string>
+    <string name="host_address_secure">https://%s:8443/csdk-sample/SDK/login</string>
+    <string name="logout">/id/%s</string>
+
+</resources>

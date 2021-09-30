@@ -1,0 +1,822 @@
+[
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_speaker_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/speaker_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_dark_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_end_conversation.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_menu_end_conversation.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_audio_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_audio_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_0_no_plus.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_0_no_plus.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_list_selector_background_disabled.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/list_selector_background_disabled.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_8.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_8.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_6.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_6.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_call_status_incoming.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_call_status_incoming.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_light_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_0.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_0.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout-land_activity_incall_pip.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout-land/activity_incall_pip.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_star.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_star.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_contact_picture.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_contact_picture.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_list_selector_background_focus.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/list_selector_background_focus.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout-sw600dp_fragment_aed.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout-sw600dp/fragment_aed.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_hash.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_hash.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_5.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_5.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_call_status_outgoing.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_call_status_outgoing.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_list_selector_background_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/list_selector_background_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_call_quality_progressbar.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/call_quality_progressbar.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_aed_new_data_dialog.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/aed_new_data_dialog.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_camera_switch.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_camera_switch.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_active_conversation.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_active_conversation.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout-sw600dp_activity_incall.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout-sw600dp/activity_incall.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_lock_ringer_on.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_lock_ringer_on.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_end_conversation.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_menu_end_conversation.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_light_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout-sw600dp-land_activity_incall.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout-sw600dp-land/activity_incall.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_buttonbar_item_focused.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/buttonbar_item_focused.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_end_call_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/end_call_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_autofocus_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/autofocus_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_default_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_default_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_7.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_7.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_list_selector_background_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/list_selector_background_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_3.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_3.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_default_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_default_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_list_selector_background_longpress.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/list_selector_background_longpress.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_allfriends.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_menu_allfriends.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_default_disabled.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_default_disabled.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_end_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_end_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_light_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_contact_picture.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_contact_picture.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_1.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_1.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_aed_data_list_item.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/aed_data_list_item.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/menu_main_menu.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_end_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_end_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_keypad_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/keypad_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_in_call_hold.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_in_call_hold.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_btn_dark.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/btn_dark.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_0_no_plus.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_0_no_plus.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_4.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_4.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_activity_about.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_aed_disconnect_topic_dialog.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/aed_disconnect_topic_dialog.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_dark_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_5.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_5.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout-sw600dp_fragment_dialer.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout-sw600dp/fragment_dialer.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_torch_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/torch_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_star.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_star.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_video_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_video_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_in_call_disable_video.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_in_call_disable_video.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_active_conversation.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_active_conversation.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_call_thumbnail_unselected.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/call_thumbnail_unselected.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_default_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_default_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_call_status_active.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_call_status_active.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_6.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_6.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_5.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_5.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_camera_switch.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_camera_switch.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_audio_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_audio_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_focus_auto.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_focus_auto.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_camera_switch.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_camera_switch.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_video_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/video_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_active_conversation.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_active_conversation.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_list_selector_background_disabled.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/list_selector_background_disabled.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_dark_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_default_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_default_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_4.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_4.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_active_conversation.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_active_conversation.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_list_selector_background_disabled.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/list_selector_background_disabled.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_camera_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/camera_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_focus_auto.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_focus_auto.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_flashlight.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_flashlight.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_call_status_outgoing.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_call_status_outgoing.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_in_call_pip.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_in_call_pip.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_active_thumbnail_item.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/active_thumbnail_item.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_list_selector_background_focus.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/list_selector_background_focus.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_star.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_star.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_focus_auto.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_focus_auto.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_call_thumbnail_selected.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/call_thumbnail_selected.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_activity_incall.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/activity_incall.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_active_calls_bar.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/active_calls_bar.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_aed_edit_data_dialog.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/aed_edit_data_dialog.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_7.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_7.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_in_call_pip.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_in_call_pip.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_list_selector_background_focus.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/list_selector_background_focus.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_light_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout-land_fragment_aed.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout-land/fragment_aed.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_default_disabled.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_default_disabled.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_0.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_0.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_custom_message_dialog.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/custom_message_dialog.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_list_selector_background_longpress.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/list_selector_background_longpress.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_hold_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/hold_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_call_status_outgoing.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_call_status_outgoing.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_6.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_6.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_add_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_add_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_video_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_video_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_btn_light.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/btn_light.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_dark_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_call_status_active.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_call_status_active.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_in_call_pip.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_in_call_pip.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_flashlight.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_flashlight.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_activity_incall_pip.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/activity_incall_pip.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_list_selector_background_longpress.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/list_selector_background_longpress.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_end_conversation.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_menu_end_conversation.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_0.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_0.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_flashlight.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_flashlight.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_end_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_end_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_add_call_thumbnail.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/add_call_thumbnail.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_menu_end_conversation.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_menu_end_conversation.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_in_call_show_keypad.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_in_call_show_keypad.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_call_status_incoming.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_call_status_incoming.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout-land_activity_incall.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout-land/activity_incall.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_bt_on.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_bt_on.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_lock_ringer_on.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_lock_ringer_on.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_aed_create_message_dialog.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/aed_create_message_dialog.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_bt_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/bt_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_contact_picture.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_contact_picture.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_4.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_4.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_bt_on.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_bt_on.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_in_call_disable_video.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_in_call_disable_video.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_light_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_aed_connect_topic_dialog.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/aed_connect_topic_dialog.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_audio_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_audio_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_in_call_mute.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_in_call_mute.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_message_from_me.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/message_from_me.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_1.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_1.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_custom_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/custom_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_mute_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/mute_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_focus_auto.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_focus_auto.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_audio_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_audio_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_bt_on.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_bt_on.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_menu_allfriends.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_menu_allfriends.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_call_status_incoming.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_call_status_incoming.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_3.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_3.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_2.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_2.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_add_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_add_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_in_call_mute.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_in_call_mute.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_hash.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_hash.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_in_call_show_keypad.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_in_call_show_keypad.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_dark_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_video_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_video_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_1.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_1.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_active_calls_bar_background.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/active_calls_bar_background.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_menu_allfriends.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_menu_allfriends.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_lock_ringer_on.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_lock_ringer_on.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_active_thumbnail_item_normal.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/active_thumbnail_item_normal.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_in_call_disable_video.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_in_call_disable_video.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_item_background.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/item_background.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_8.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_8.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_answer_call_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/answer_call_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_in_call_show_keypad.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_in_call_show_keypad.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_3.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_3.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_light_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_default_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_default_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_call_held.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/call_held.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_default_disabled.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_default_disabled.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_in_call_mute.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_in_call_mute.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_in_call_hold.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_in_call_hold.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_aed_topic_list_item.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/aed_topic_list_item.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_in_call_hold.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_in_call_hold.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_message_from_them.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/message_from_them.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_7.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_7.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_contact_list_item.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/contact_list_item.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_2.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_2.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_2.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_2.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_menu_allfriends.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/ic_menu_allfriends.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_btn_default.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/btn_default.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_call_held.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/call_held.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_call_status_active.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_call_status_active.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_flashlight.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_flashlight.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_list_selector_background_transition.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/list_selector_background_transition.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_call_held.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/call_held.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_list_selector_background_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/list_selector_background_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_in_call_pip.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/ic_in_call_pip.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout-land_fragment_dialer.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout-land/fragment_dialer.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-mdpi_btn_number_8.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-mdpi/btn_number_8.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_dark_normal.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_fragment_aed.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/fragment_aed.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_default_pressed.9.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_default_pressed.9.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable_buttonbar_item_pressed.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable/buttonbar_item_pressed.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_btn_number_0_no_plus.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/btn_number_0_no_plus.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_video_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-ldpi/ic_video_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_add_call.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-hdpi/ic_add_call.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/drawable-xhdpi_btn_number_hash.png.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/drawable-xhdpi/btn_number_hash.png"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_pip_toggle_button.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/pip_toggle_button.xml"
+    },
+    {
+        "merged": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/build/intermediates/res/merged/debug/layout_fragment_dialer.xml.flat",
+        "source": "/Users/khangdm/Documents/nal/ncb/android/sample-app-3.3.22-1/app/src/main/res/layout/fragment_dialer.xml"
+    }
+]

@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- acb_mid_blue -->
+    <solid android:color="#4B80B6" />
+    
+    <!-- <gradient
+        android:angle="90"
+        android:startColor="143593"
+        android:endColor="4B80B6" /> -->
+
+</shape>
