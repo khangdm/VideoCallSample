@@ -23,7 +23,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="32sp"/>
+            android:textSize="32sp"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/labelStatus"
@@ -31,10 +32,11 @@
             android:layout_height="wrap_content"
             android:textColor="@color/separator_grey"
             android:text="@string/call_status_dialling"
-            android:textAppearance="?android:attr/textAppearanceMedium"/>
-        
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone"/>
+
     </LinearLayout>
-	    
+
     <!-- Other calls layout -->
 
    <LinearLayout
@@ -216,7 +218,7 @@
                 android:onClick="onDtmfKeyClick"
                 android:src="@drawable/btn_number_3"
                 android:tag="3"/>
-            
+
         </TableRow>
 
         <TableRow
@@ -247,7 +249,7 @@
                 android:onClick="onDtmfKeyClick"
                 android:src="@drawable/btn_number_6"
                 android:tag="6"/>
-            
+
         </TableRow>
 
         <TableRow
@@ -278,7 +280,7 @@
                 android:onClick="onDtmfKeyClick"
                 android:src="@drawable/btn_number_9"
                 android:tag="9"/>
-            
+
         </TableRow>
 
         <TableRow
@@ -313,7 +315,7 @@
         </TableRow>
 
     </TableLayout>
-    
+
     <ProgressBar
 	    android:id="@+id/callQualityBar"
 	    style="?android:attr/progressBarStyleHorizontal"
@@ -337,13 +339,13 @@
         android:paddingRight="5dp"
         android:paddingBottom="1dp"
         android:visibility="visible"/>
-    
-    <ImageView 
-        android:id="@+id/remoteCallHeld"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/call_held"/>
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/remoteCallHeld"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:src="@drawable/call_held"/>-->
 
 </RelativeLayout>

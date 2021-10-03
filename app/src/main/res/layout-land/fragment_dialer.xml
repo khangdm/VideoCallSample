@@ -139,23 +139,23 @@
 	        android:layout_width="0dp"
 	        android:layout_height="match_parent"
 	        android:layout_weight="1">
-	
-        <EditText 
-            android:id="@+id/tvNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:gravity="center_vertical"
-            android:textAppearance="?android:attr/textAppearanceLargeInverse"
-            android:background="@android:color/white"
-            android:hint="@string/phone_number_hint"
-            android:padding="10dp"
-            android:textColor="@color/tp_dark_blue"
-            android:textColorHint="@color/tp_light_blue"
-            android:inputType="textUri"
-            android:imeOptions="actionUnspecified"/>
+
+			<EditText
+				android:id="@+id/tvNumber"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginTop="5dp"
+				android:layout_marginRight="5dp"
+				android:background="@android:color/white"
+				android:gravity="center_vertical"
+				android:text="@string/phone_number_hint"
+				android:imeOptions="actionUnspecified"
+				android:inputType="textUri"
+				android:padding="10dp"
+				android:textAppearance="?android:attr/textAppearanceLargeInverse"
+				android:textColor="@color/tp_dark_blue"
+				android:textColorHint="@color/tp_light_blue" />
 	        
 	
 	        <ImageView

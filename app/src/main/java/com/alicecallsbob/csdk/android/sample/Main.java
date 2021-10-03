@@ -56,19 +56,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 	/** Identifier String for LogCat output. */
 	protected static final String TAG = "Main";
 
-	/** Message handler message type for incoming calls. */
-	protected static final int INCOMING = 0;
-	/** Message handler message type for when the user has logged out. */
-	protected static final int LOGGED_OUT = 1;
-	/** Request code for resolution selected result */
-	protected static final int RESOLUTION_REQUEST_CODE = 10;
-	/** Request code for camera selected result */
-	protected static final int CAMERA_REQUEST_CODE = 11;
-    /** Request code for selected audio media direction */
-    protected static final int AUDIO_DIRECTION_REQUEST_CODE = 12;
-    /** Request code for selected VIDEO media direction */
-    protected static final int VIDEO_DIRECTION_REQUEST_CODE = 13;
-
 	/*
 	 * Keys used to pass the data from the login activity to this activity.
 	 */
@@ -151,136 +138,16 @@ public final class Main extends FragmentActivity implements PhoneListener,
 				 * number/address, or the application name if the user doesn't
 				 * exist.
 				 */
+				makeCall("sip:3333@10.138.139.18");
 				setTitle("mUser.getNameAndNumberTitle(Main.this)");
 			}
 		}
 	}
 
-//	private static final class MsgHandler extends Handler
-//	{
-//		/**
-//		 * Weak reference to the Main class, used to aid garbage collection.
-//		 * See {@link http://stackoverflow.com/questions/11407943/this-handler-class-should-be-static-or-leaks-might-occur-incominghandler}
-//		 * for more information about this.
-//		 */
-//		private final WeakReference<Main> wrParent;
-//
-//		/**
-//		 * Constructor.
-//		 *
-//		 * @param activity The Main Activity instance.
-//		 */
-//		public MsgHandler(final Main activity)
-//		{
-//			wrParent = new WeakReference<Main>(activity);
-//		}
-//
-//		@Override
-//		public void handleMessage(final Message msg)
-//		{
-//			final Main activity = wrParent.get();
-//
-//			switch (msg.what)
-//			{
-//			case INCOMING:
-//				handleIncomingCall(activity);
-//				break;
-//
-//			case LOGGED_OUT:
-//				if (!LoginActivity.isAlive())
-//				{
-//					activity.startActivity(new Intent(activity.getApplicationContext(),
-//													  LoginActivity.class));
-//				}
-//				activity.finish();
-//				break;
-//			}
-//		}
-//
-//		/**
-//		 * Show a dialog offering the user the chance to answer/reject the incoming call.
-//		 *
-//		 * @param activity The Main Activity instance
-//		 */
-//		private void handleIncomingCall(final Main activity)
-//		{
-//			// An incoming call should ring on the speakerphone.
-//			AudioManager am = (AudioManager) activity.getSystemService(AUDIO_SERVICE);
-//			am.setSpeakerphoneOn(true);
-//
-//			// Get the call
-//			final List<? extends Call> allCalls = mCallManager.getCurrentCalls();
-//			final Call incomingCall = allCalls.get(allCalls.size() - 1);
-//			final String incomingCallId  = incomingCall.getCallId();
-//
-//			// Create a dialog to notify the user of a new call
-//			final DialogFragment incomingCallFragment = new IncomingCallFragment(
-//			        wrParent.get().getPreferredAudioDirection(),
-//			        wrParent.get().getPreferredVideoDirection());
-//
-//			// Pass the Id of the call to the fragment so that it can retrieve the call in order to cancel/accept
-//			final Bundle args = new Bundle();
-//			args.putString(CALL_ID_ARG, incomingCallId);
-//			incomingCallFragment.setArguments(args);
-//
-//			// Show the dialog fragment. By using a fragment we don't need to deal with the dialog being
-//			// dismissed and re-shown when the device orientation changes.
-//			incomingCallFragment.show(activity.getFragmentManager(), incomingCallId);
-//		}
-//	};
-//
-	private class ConnectionStateMonitor extends BroadcastReceiver
-	{
-	    @Override
-	    public void onReceive(Context context, Intent intent)
-	    {
-	        final ConnectivityManager connectivityManager =
-	                (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-
-	        if (connectivityManager == null)
-	        {
-	            Log.w(TAG, "Connectivity manager unavailable");
-	            if (mUC != null)
-	            {
-	                mUC.setNetworkReachable(false);
-	            }
-	        }
-
-	        final NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-	        if (activeNetworkInfo != null)
-	        {
-	            final boolean reachable = activeNetworkInfo.isConnected();
-	            final String networkType = activeNetworkInfo.getTypeName();
-
-	            if (reachable)
-	            {
-	                Utils.logAndToast(Main.this, TAG, Log.INFO, "Network reachable: " + networkType + " " + activeNetworkInfo);
-	            }
-	            else
-	            {
-	            		Utils.logAndToast(Main.this, TAG, Log.INFO, "Network not reachable: " + networkType  + " " + activeNetworkInfo);
-	            }
-
-	            if (mUC != null)
-                {
-                    mUC.setNetworkReachable(reachable);
-                }
-	        }
-	        else
-	        {
-	            Utils.logAndToast(Main.this, TAG, Log.INFO, "Network not reachable: null");
-	            if (mUC != null)
-                {
-                    mUC.setNetworkReachable(false);
-                }
-	        }
-	    }
-	}
-
 	/** The static UC instance that we use throughout the application. */
 	private static UC mUC;
 	/** Boolean flag we use to keep track of whether the UC session is initialised. */
-	private static boolean mUCInitialized;
+//	private static boolean mUCInitialized;
 	/** Boolean flag we use to keep track of whether cookies should be enabled. */
 	private static boolean mUCUseCookies;
 	private static boolean mUCSupportsRenegotiation;
@@ -309,16 +176,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 
 	/** The manager that we use to make and receive phone calls. */
 	protected static Phone mCallManager = null;
-
-	/** The user's details. */
-	private User mUser;
-
-	/** Message handler used to pass messages from background threads to the UI thread. */
-//	private MsgHandler mMsgHandler;
-
-	/** Device connection state monitor; will notify UC when network connectivity lost */
-	private final ConnectionStateMonitor connectionStateMonitor = new ConnectionStateMonitor();
-	
 	/** A listener that generates a notification when an incoming call is received*/
 	private final PhoneListener mNotifyOnIncomingListener = new PhoneListener(){
         @Override public void onCaptureSettingChange(PhoneVideoCaptureSetting setting, int camera) {}
@@ -336,7 +193,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 		super.onCreate(savedInstanceState);
 
 		Log.v(TAG, "onCreate " + savedInstanceState);
-        registerReceiver(connectionStateMonitor, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
 
 		// Check if we are re-creating a previously destroyed instance
 		if (savedInstanceState != null)
@@ -345,10 +201,8 @@ public final class Main extends FragmentActivity implements PhoneListener,
 
 			mSessionKey = savedInstanceState.getString(DATA_SESSION_KEY);
 			mLogoutURL = savedInstanceState.getString(DATA_LOGOUT_URL);
-			mUCInitialized = savedInstanceState.getBoolean(DATA_UC_INITIALIZED, false);
 			mUCUseCookies  = savedInstanceState.getBoolean(DATA_UC_USE_COOKIES, false);
 			mUCSupportsRenegotiation = savedInstanceState.getBoolean(DATA_UC_SUPPORTS_RENEG, true);
-			mUser = User.restoreState(savedInstanceState);
 
 			if (mUC == null) 
 			{
@@ -364,8 +218,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 		}
 		else
 		{
-			mUCInitialized = false; // reset before initial initialisation
-
 			Bundle args = getIntent().getExtras();
 			if (args != null)
 			{
@@ -395,25 +247,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 		}
 
 		setContentView(R.layout.main);
-
-		FragmentTabHost tabHost = (FragmentTabHost)findViewById(android.R.id.tabhost);
-		tabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
-
-		// Dialer/Calls tab
-		final String dialerTitle = getString(R.string.dialer_title);
-		tabHost.addTab(tabHost.newTabSpec(dialerTitle).setIndicator(dialerTitle),
-					   DialerFragment.class, null);
-
-		// AED tab
-		final String aedTitle = getString(R.string.aed_title);
-		tabHost.addTab(tabHost.newTabSpec(aedTitle).setIndicator(aedTitle),
-					   AEDFragment.class, null);
-
-//		mMsgHandler = new MsgHandler(this);
-
-		mUser = User.getInstance();
-
-		// Default which camera to use.
 		preferredCameraIdx = getDefaultPreferredCameraIdxToUse();
 	}
 
@@ -421,23 +254,10 @@ public final class Main extends FragmentActivity implements PhoneListener,
 	protected void onStart()
 	{
 		super.onStart();
-		Log.v(TAG, "onStart " + mSessionKey + " - " + mUCInitialized);
 
 		if (mSessionKey != null)
 		{
-			if (!mUCInitialized)
-			{
-				new UCStartTask().execute();
-			}
-			else
-			{
-				addUCListener(this);
-
-				if (mCallManager != null)
-				{
-					mCallManager.addListener(this);
-				}
-			}
+			new UCStartTask().execute();
 		}
 	}
 
@@ -445,22 +265,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 	protected void onResume()
 	{
 		super.onResume();
-
-		if (mUC != null)
-		{
-			setTitle("mUser.getNameAndNumberTitle(Main.this)");
-		}
-		
-		// If we've got active calls, set this as their listeners
-		if (mCallManager != null)
-		{
-			List<? extends Call> calls = mCallManager.getCurrentCalls();
-			for (Iterator<? extends Call> callIt = calls.iterator(); callIt.hasNext(); )
-			{
-				Call call = callIt.next();
-				call.addListener(this);
-			}
-		}
 	}
 
 	@Override
@@ -476,132 +280,8 @@ public final class Main extends FragmentActivity implements PhoneListener,
 	protected void onSaveInstanceState(final Bundle outState)
 	{
 		super.onSaveInstanceState(outState);
-		Log.d(TAG, "Save Instance State");
-
-		outState.putString(DATA_SESSION_KEY, mSessionKey);
-		outState.putString(DATA_LOGOUT_URL, mLogoutURL);
-		outState.putBoolean(DATA_UC_INITIALIZED, isUCInitialized());
-		outState.putBoolean(DATA_UC_USE_COOKIES, mUCUseCookies);
-		if (mUser != null)
-		{
-			mUser.saveState(outState);
-		}
-		
-		outState.putInt(DATA_SELECTED_CAMERA, preferredCameraIdx);
 	}
 
-	@Override
-	protected void onStop()
-	{
-		super.onStop();
-		Log.d(TAG, "onStop");
-
-		if (mCallManager != null)
-		{
-			mCallManager.removeListener(this);
-		}
-	}
-
-	@Override
-	public void onDestroy()
-	{
-		super.onDestroy();
-		final boolean changingConfig = isChangingConfigurations();
-		Log.v(TAG, "onDestroy " + changingConfig);
-		unregisterReceiver(connectionStateMonitor);
-
-		if (!changingConfig)
-		{
-			User.destroy();
-
-			if (mUC != null)
-			{
-				mUC.stopSession();
-			}
-
-			mUC = null;
-			mDisplay = null;
-		}
-	}
-
-	@Override
-	public void onBackPressed()
-	{
-		/*
-		 * The user should not be pressing Back to exit this screen, they should press Home or
-		 * the Logout menu option. So in here, we show them a warning dialog and ask if they
-		 * want to logout and go Back or stay here in the dialer.
-		 */
-		new AlertDialog.Builder(this)
-			.setIcon(android.R.drawable.ic_dialog_alert)
-			.setTitle(android.R.string.dialog_alert_title)
-			.setMessage(R.string.logout_dialog_message)
-			.setPositiveButton(R.string.menu_logout, new DialogInterface.OnClickListener()
-				{
-					@Override
-					public void onClick(final DialogInterface dialog, final int which)
-					{
-						logout();
-					}
-				})
-			.setNegativeButton(android.R.string.cancel, null)
-			.create()
-			.show();
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(final Menu menu)
-	{
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.main_menu, menu);
-		
-		final int numberOfCameras = Camera.getNumberOfCameras();
-		if (numberOfCameras > 1)
-		{	    			
-			Log.d(TAG, "More than 1 camera on device - displaying camera selection menu");
-		}
-		else
-		{
-			Log.d(TAG, "Only 1 camera on device - NOT displaying camera selection menu");
-			menu.removeItem(R.id.menu_camera);
-		}
-		
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(final MenuItem item)
-	{
-	    switch (item.getItemId())
-	    {
-	        case R.id.menu_logout:
-	            logout();
-	            return true;
-	        case R.id.menu_about:
-	            about();
-	            return true;
-	        case R.id.menu_resolution:
-	            selectResolution();
-	            return true;
-	        case R.id.menu_camera:	        	
-	            selectCamera();
-	    			return true;
-            case R.id.menu_audio_direction:
-                selectAudioDirection();
-                return true;
-            case R.id.menu_video_direction:
-                selectVideoDirection();
-                return true;
-	        default:
-	            return super.onOptionsItemSelected(item);
-	        
-	    }
-	}
-
-	public static boolean isUCInitialized()
-	{
-		return mUCInitialized;
-	}
 
 	/**
 	 * Start the in-call Activity, passing it the phone number/address and whether we want video
@@ -627,86 +307,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 		return true;
 	}
 
-	public static boolean isLargeScreenDevice(Context context) 
-	{
-	    int screenLayout = context.getResources().getConfiguration().screenLayout;
-	    screenLayout &= Configuration.SCREENLAYOUT_SIZE_MASK;
-
-	    switch (screenLayout) 
-	    {
-		    case Configuration.SCREENLAYOUT_SIZE_LARGE:
-		    case Configuration.SCREENLAYOUT_SIZE_XLARGE:
-		        return true;
-	    }
-	    
-	    return false;
-    }
-	
-	protected void logout()
-	{
-		for (Call c : mUC.getPhone().getCurrentCalls()) 
-		{
-			if (c.getCallStatus() == CallStatus.ALERTING) 
-			{
-				Log.w(TAG, "Automatically removing notification for call with " + c.getRemoteDisplayName() + " before logging out.");
-				NotificationHelper.removeIncomingCallNotification(getApplicationContext());
-			}
-
-			Log.w(TAG, "Automatically ending call with " + c.getRemoteDisplayName() + " before logging out.");
-			c.end();			
-		}
-		
-		LoginHandler.logout(mLogoutURL);
-//		mMsgHandler.sendEmptyMessage(LOGGED_OUT);
-	}
-	
-    /**
-     * Start the about activity
-     */
-    protected void about()
-    {
-        final Intent intent = new Intent(this, AboutActivity.class);
-        startActivity(intent);
-    }
-    
-    /**
-     * Start the resolution selection activity
-     */
-    protected void selectResolution()
-    {
-        final PhoneVideoCaptureResolution currentResolution = 
-                mCallManager.getPreferredCaptureResolution();
-        final Intent intent = new Intent(this, ResolutionActivity.class);
-        intent.putExtra(DATA_RECOMMENDED_SETTINGS, 
-                (Serializable)mCallManager.getRecommendedCaptureSettings());
-        intent.putExtra(DATA_SELECTED_RESOLUTION, currentResolution);
-        startActivityForResult(intent, RESOLUTION_REQUEST_CODE);
-    }
-    
-    protected void selectCamera()
-    {            	
-        final int currentCameraIdx = preferredCameraIdx;
-        final Intent intent = new Intent(this, CameraSelectionActivity.class);        
-        intent.putExtra(DATA_RECOMMENDED_SETTINGS, (Serializable) mSupportedCameraSelections);        
-        intent.putExtra(DATA_SELECTED_CAMERA, currentCameraIdx);        
-        startActivityForResult(intent, CAMERA_REQUEST_CODE);
-    }
-
-    
-    protected void selectAudioDirection()
-    {
-        final Intent intent = new Intent(this, SelectMediaDirectionActivity.class);  
-        intent.putExtra(DATA_SELECTED_MEDIA_DIRECTION, preferredAudioDirection);
-        startActivityForResult(intent, AUDIO_DIRECTION_REQUEST_CODE);
-    }
-
-    protected void selectVideoDirection()
-    {
-        final Intent intent = new Intent(this, SelectMediaDirectionActivity.class);  
-        intent.putExtra(DATA_SELECTED_MEDIA_DIRECTION, preferredVideoDirection);
-        startActivityForResult(intent, VIDEO_DIRECTION_REQUEST_CODE);
-    }
-
 	public static Phone getPhoneManager()
 	{
 		return (mUC != null) ? mUC.getPhone() : null;
@@ -717,13 +317,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 		return (mUC != null) ? mUC.getAED() : null;
 	}
 
-	public static void addUCListener(final UCListener listener)
-	{
-		if (mUC != null)
-		{
-			mUC.addListener(listener);
-		}
-	}
 
 	public static void removeUCListener(final UCListener listener)
 	{
@@ -781,35 +374,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 	@Override
 	public void onStatusChanged(final Call call, final CallStatus status)
 	{
-		Log.v(TAG, "onStatusChanged - new status: " + status.name());
-
-		if (status == CallStatus.ENDED)
-		{
-			Log.v(TAG, "call ended");
-
-			final Fragment incomingCallFragment = getFragmentManager().findFragmentByTag(call.getCallId());
-
-			if (incomingCallFragment != null)
-			{
-				// An incoming call has ended before we've answered it.
-				runOnUiThread(new Runnable()
-				{
-					@Override
-					public void run()
-					{
-						((DialogFragment)incomingCallFragment).dismissAllowingStateLoss();
-						NotificationHelper.removeIncomingCallNotification(getApplicationContext());
-					}
-				});
-			}
-
-			call.removeListener(this);
-
-			if (mActiveCallsBarListener != null)
-			{
-				mActiveCallsBarListener.updateActiveCallsBarVisibility(call);
-			}
-		}
 	}
 
 	@Override
@@ -818,7 +382,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 		// The call will be answered in handleIncomingCall, which creates an InCallActivity.
 		Log.v(TAG, "onIncomingCall");
 		call.addListener(this);
-//		mMsgHandler.sendEmptyMessage(INCOMING);
 	}
 
 	@Override
@@ -828,7 +391,7 @@ public final class Main extends FragmentActivity implements PhoneListener,
 
 		this.runOnUiThread(new Runnable() {
 			public void run() {
-				Utils.logAndToast(Main.this, TAG, Log.WARN, "Connection to the server has been lost");
+				Utils.logAndToast(Main.this, TAG, Log.WARN, "Connection to the server has been lost111");
 			}
 		});
 		
@@ -838,13 +401,12 @@ public final class Main extends FragmentActivity implements PhoneListener,
 			// Attempt to end the current call
 			calls.get(0).end();
 		}
-        logout();
 	}
 
 	@Override
 	public void onSessionNotStarted()
 	{
-		mUCInitialized = false;
+//		mUCInitialized = false;
 		final String error = "Session initialization has failed.";
 		Log.w(TAG, error);
 		new AlertDialog.Builder(Main.this)
@@ -859,8 +421,8 @@ public final class Main extends FragmentActivity implements PhoneListener,
 	public void onSessionStarted()
 	{
 		Log.i(TAG, "Session Started");
-		
-		mUCInitialized = true;
+
+//		mUCInitialized = true;
 		if (mActiveCallsBarListener != null)
 		{
 			mActiveCallsBarListener.updateActiveCallsBarVisibility(null);
@@ -890,107 +452,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 	public static Display getDisplay()
 	{
 		return mDisplay;
-	}
-	
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data)
-	{
-	    if (resultCode == RESULT_OK)
-	    {
-	    	    switch(requestCode)
-	    	    {
-	    	        case RESOLUTION_REQUEST_CODE:
-	    	            setResolutionFromResult(data);
-	    	            break;
-	    	            
-	    	        case CAMERA_REQUEST_CODE:
-	    	        		setCameraFromResult(data);
-	    	            break;
-	    	            
-	            case AUDIO_DIRECTION_REQUEST_CODE:
-	                setPreferredAudioDirectionFromResult(data);
-	                break;
-	                
-	            case VIDEO_DIRECTION_REQUEST_CODE:
-	                setPreferredVideoDirectionFromResult(data);
-	                break;
-	                    
-	    	        default:
-	    	        		Log.w(TAG, "Unrecognised requestCode receieved in onActivityResult callback. RequestCode: "
-	    	                + requestCode);    	        	
-	    	    }
-	    }
-	}
-	
-    private void setPreferredAudioDirectionFromResult(Intent data) 
-    {
-        final MediaDirection dir = (MediaDirection) data.getExtras().get(DATA_SELECTED_MEDIA_DIRECTION);
-        preferredAudioDirection = dir;
-        logAndToastMediaDirectionChange("audio", dir);
-    }
-    
-    private void setPreferredVideoDirectionFromResult(Intent data) 
-    {
-        final MediaDirection dir = (MediaDirection) data.getExtras().get(DATA_SELECTED_MEDIA_DIRECTION);
-        preferredVideoDirection = dir;
-        logAndToastMediaDirectionChange("video", dir);
-    }
-    
-    private void logAndToastMediaDirectionChange(String audioOrVideo, MediaDirection dir)
-    {
-        switch (dir)
-        {
-            case SEND_AND_RECEIVE:  Utils.logAndToast(Main.this, TAG, Log.INFO, "Send and receive " + audioOrVideo); break;
-            case SEND_ONLY:         Utils.logAndToast(Main.this, TAG, Log.INFO, "Only send " + audioOrVideo); break;
-            case RECEIVE_ONLY:      Utils.logAndToast(Main.this, TAG, Log.INFO, "Only receive " + audioOrVideo); break;
-            case NONE:              Utils.logAndToast(Main.this, TAG, Log.INFO, "No " + audioOrVideo); break;
-            default:                Utils.logAndToast(Main.this, TAG, Log.WARN, "Unrecognised selection"); break;
-        }
-    }    
-
-	private void setResolutionFromResult(Intent data)
-	{
-	    final PhoneVideoCaptureResolution resolution = 
-	            (PhoneVideoCaptureResolution)data.getExtras().get(DATA_SELECTED_RESOLUTION);
-	    
-	    mCallManager.setPreferredCaptureResolution(resolution);
-	    
-	    Utils.logAndToast(Main.this, TAG, Log.INFO, "Resolution set to: " + resolution);
-	}
-	
-	private void setCameraFromResult(Intent data)
-	{
-	    final PhoneVideoCamera preferredCamera = (PhoneVideoCamera) data.getExtras().get(DATA_SELECTED_CAMERA);
-	    	    	    
-	    Log.d(TAG, "User selected preferred camera: " + preferredCamera);	    
-	    
-	    // We look for the first camera idx with preferred camera direction...
-        for (int i = 0; i < Camera.getNumberOfCameras(); i++)
-        {
-            CameraInfo cameraInfo = new CameraInfo();            
-            Camera.getCameraInfo(i, cameraInfo);
-            
-            if (cameraInfo.facing == preferredCamera.getCameraFacingDirection())
-            {
-	            	// store state for the app
-	            	preferredCameraIdx = i;
-	            	Log.d(TAG, "Found first camera facing direction user selected at idx: " + i);
-	            	break;
-            }
-        }
-               
-        // inform FCSDK of camera selection for next call.
-	    mCallManager.setCamera(preferredCameraIdx);
-	 	    
-        // Confirm to user what's been selected
-        if (preferredCamera.getCameraFacingDirection() == CameraInfo.CAMERA_FACING_FRONT)
-        {
-            Utils.logAndToast(Main.this, TAG, Log.INFO, "Selected Front Camera - faces same direction as screen.");
-        }
-        else
-        {
-        		Utils.logAndToast(Main.this, TAG, Log.INFO, "Selected Back Camera - faces opposite direction to screen.");
-        }
 	}
 
     @Override
@@ -1064,16 +525,6 @@ public final class Main extends FragmentActivity implements PhoneListener,
 		
 		return preferredCameraIdx;
 	}
-
-    private MediaDirection getPreferredAudioDirection() 
-    {
-        return preferredAudioDirection;
-    }
-
-    private MediaDirection getPreferredVideoDirection() 
-    {
-        return preferredVideoDirection;
-    }
 
 	@Override
     public void onRemoteHeld(Call arg0)

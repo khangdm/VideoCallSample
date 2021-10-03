@@ -12,7 +12,7 @@
 
     <!-- Dialer -->
     <string name="dialer_title">Dialer</string>
-    <string name="phone_number_hint">SIP/Phone number</string>
+    <string name="phone_number_hint">sip:3333@10.138.139.18</string>
     <string-array name="tel_num_context_menu_options">
         <item>Copy</item>
         <item>Paste</item>

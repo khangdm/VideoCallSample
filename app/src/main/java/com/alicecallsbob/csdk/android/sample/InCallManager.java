@@ -796,6 +796,8 @@ public class InCallManager
                 listener.onSurfaceRenderingStarted(videoSurface);
             }
         }
+
+
         
     }
     

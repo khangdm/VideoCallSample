@@ -26,6 +26,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -44,8 +45,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Rational;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,10 +53,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
-import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.webrtc.EglRenderer;
+import org.webrtc.VideoFrame;
+import org.webrtc.VideoRenderer;
 
 /**
  * Activity that is used to display and handle one or more active calls,
@@ -65,7 +67,7 @@ import android.widget.Toast;
  */
 @SuppressWarnings("deprecation")
 public final class InCallActivity extends Activity implements PhoneListener,
-        CallListener, UCListener, VideoSurfaceListener, AudioDeviceManagerListener {
+        CallListener, UCListener, VideoSurfaceListener, AudioDeviceManagerListener, VideoRenderer.Callbacks, EglRenderer.FrameListener {
     /** Identifier String for LogCat output. */
     private static final String TAG = "InCallActivity";
 
@@ -93,6 +95,19 @@ public final class InCallActivity extends Activity implements PhoneListener,
         video container size. 
     */
     private static final int PREVIEW_WINDOW_SIZE_RATIO = 4;
+
+    @Override
+    public void renderFrame(VideoFrame videoFrame) {
+        Log.e(TAG, "renderFrame: ");
+    }
+
+    @Override
+    public void onFrame(Bitmap bitmap) {
+        Log.e(TAG, "renderFrame1: ");
+        if (bitmap != null) {
+            bitmap.recycle();
+        }
+    }
 
     /**
      *
@@ -367,77 +382,6 @@ public final class InCallActivity extends Activity implements PhoneListener,
 
 	private BluetoothAdapter mBluetoothAdapter;
 
-	private final int MENU_EARPIECE = Menu.FIRST;
-	private final int MENU_SPEAKER = Menu.FIRST + 1;
-	private final int MENU_WIRED = Menu.FIRST + 2;
-	private final int MENU_BLUETOOTH = Menu.FIRST + 3;
-
-    @Override
-    public boolean onPrepareOptionsMenu(final Menu menu)
-    {
-        Log.d(TAG, "onPrepareOptionsMenu");
-        menu.clear();
-        final Set<AudioDevice> devices = mCallManager.getAudioDeviceManager().getAudioDevices();
-        final AudioDevice selectedDevice = mCallManager.getAudioDeviceManager().getSelectedAudioDevice();
-        if (devices.contains(AudioDevice.EARPIECE))
-        {
-            selectMenuItem(menu.add(0, MENU_EARPIECE, Menu.NONE, R.string.earpiece), AudioDevice.EARPIECE, selectedDevice);
-        }
-        if (devices.contains(AudioDevice.SPEAKER_PHONE))
-        {
-            selectMenuItem(menu.add(0, MENU_SPEAKER, Menu.NONE, R.string.speaker), AudioDevice.SPEAKER_PHONE, selectedDevice);
-        }
-        if (devices.contains(AudioDevice.BLUETOOTH))
-        {
-            selectMenuItem(menu.add(0, MENU_BLUETOOTH, Menu.NONE, R.string.bluetooth), AudioDevice.BLUETOOTH, selectedDevice);
-        }
-        if (devices.contains(AudioDevice.WIRED_HEADSET))
-        {
-            selectMenuItem(menu.add(0, MENU_WIRED, Menu.NONE, R.string.wired), AudioDevice.WIRED_HEADSET, selectedDevice);
-        }
-        return super.onPrepareOptionsMenu(menu);
-    }
-
-	private void selectMenuItem(MenuItem item, AudioDevice device, AudioDevice selectedDevice)
-	{
-	    item.setCheckable(true);
-	    if (device == selectedDevice)
-	    {
-            item.setChecked(true);
-        }
-	}
-
-	@Override
-    public boolean onOptionsItemSelected(final MenuItem item)
-    {
-        Log.d(TAG, "onOptionsItemSelected");
-        switch (item.getItemId())
-        {
-            case MENU_EARPIECE:
-                mCallManager.getAudioDeviceManager().setAudioDevice(AudioDevice.EARPIECE);
-                return true;
-            case MENU_SPEAKER:
-                mCallManager.getAudioDeviceManager().setAudioDevice(AudioDevice.SPEAKER_PHONE);
-                return true;
-            case MENU_WIRED:
-                mCallManager.getAudioDeviceManager().setAudioDevice(AudioDevice.WIRED_HEADSET);
-                return true;
-            case MENU_BLUETOOTH:
-                mCallManager.getAudioDeviceManager().setAudioDevice(AudioDevice.BLUETOOTH);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-
-        }
-    }
-
-    @Override
-    protected void onNewIntent(Intent intent)
-    {
-        Log.d(TAG, "onNewIntent() " + intent);
-        super.onNewIntent(intent);
-    }
-
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         Log.d(TAG, "onCreate() " + INSTANCE);
@@ -473,7 +417,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
         //Set the fallback device if wired headset unplugged or bluetooth disconnects.
         mCallManager.getAudioDeviceManager().setDefaultAudioDevice(AudioDevice.SPEAKER_PHONE);
 
-        startLocalCamera();
+//        startLocalCamera();
 
         updateCallsList();
 
@@ -496,40 +440,8 @@ public final class InCallActivity extends Activity implements PhoneListener,
             }
 
             Log.d(TAG, "outgoing:" + mCallOutgoing + ", address:" + mCalleeAddress);
-        } else if (mInCallManager.getCurrentCall() != null) {
-        	// Then a call is already in existence (but we may not be IN_CALL yet).
-            if (savedInstanceState != null)
-            {
-                mRemoteVideo = savedInstanceState.getBoolean(SAVED_STATE_KEY_REMOTE_VIDEO);
-                mAudioDirection = (MediaDirection) savedInstanceState.getSerializable(SAVED_STATE_KEY_AUDIO_DIRECTION);
-                mVideoDirection = (MediaDirection) savedInstanceState.getSerializable(SAVED_STATE_KEY_VIDEO_DIRECTION);
-            }
-            else
-            {
-                mRemoteVideo = mInCallManager.getCurrentCall().hasRemoteVideo();
-            }
-            mCalleeAddress = mInCallManager.getCurrentCall().getRemoteAddress();
-        } else {
-            /*
-             * ERROR. When we start this Activity, we should either have an
-             * existing Call, or we should have some Intent data telling us to
-             * create a new outgoing call. If we have neither, we shouldn't be
-             * in this Activity, so we can finish it now.
-             */
-            Log.w(TAG,
-                    "We have neither an existing Call, or some Intent data for"
-                            + " a new Call, so we shouldn't be in here and will leave right"
-                            + " now");
-            finish();
         }
-
-        if (isInPictureInPictureMode())
-        {
-            setContentView(R.layout.activity_incall_pip);
-        }
-        else {
             setContentView(R.layout.activity_incall);
-        }
 
         // This call originated remotely and has not been answered yet
         if (mInCallManager.getCurrentCall() != null
@@ -552,7 +464,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
          */
 
         // Call details view
-        mDetailsContainer = (LinearLayout) findViewById(R.id.callDetailsLayout);
+//        mDetailsContainer = (LinearLayout) findViewById(R.id.callDetailsLayout);
 
         // Call status
         mStatusView = ((TextView) findViewById(R.id.labelStatus));
@@ -618,20 +530,6 @@ public final class InCallActivity extends Activity implements PhoneListener,
 
         // 'End call' button
         findViewById(R.id.btnEndCall).setOnClickListener(mOnEndCallClicked);
-
-        // Get the object that we use for the call thumbnails
-        mCallThumbnails = (LinearLayout) findViewById(R.id.callThumbnails);
-
-        // Disable the 'Add call' button as we only support a single call ATM.
-        final View addCallThumbnail = findViewById(R.id.addCallThumbnail);
-
-        //Not all devices will be able to add multiple calls
-        if (addCallThumbnail != null)
-        {
-            //findViewById(R.id.addCallThumbnail).setEnabled(false);
-            addCallThumbnail.setOnClickListener(mOnAddCallClicked);
-            mAddCallClicked = false;
-        }
 
         // Video views
         createVideoComponents(mCallOutgoing);
@@ -804,28 +702,28 @@ public final class InCallActivity extends Activity implements PhoneListener,
     protected void onSaveInstanceState(final Bundle outState) {
         Log.d(TAG, "Save Instance State");
         super.onSaveInstanceState(outState);
-
-        final int displayRotation = Main.getDisplay().getRotation();
-        if (displayRotation != mDisplayRotation) {
-            Log.d(TAG, "Device is rotating/rotated. current/new display "
-                    + "orientation (" + displayRotation + ") doesn't match the"
-                    + " previous/old rotation (" + mDisplayRotation + ")");
-        }
-        AudioDevice mAudioDevice = AudioDevice.NONE;
-        if (mCallManager.getAudioDeviceManager() != null)
-        {
-            mAudioDevice = mCallManager.getAudioDeviceManager().getSelectedAudioDevice();
-        }
-        outState.putBoolean(SAVED_STATE_KEY_AUDIO_MUTED, mIsAudioMuted);
-        outState.putBoolean(SAVED_STATE_KEY_VIDEO_MUTED, mIsVideoMuted);
-        outState.putBoolean(SAVED_STATE_KEY_FRONT_CAMERA_ACTIVE, mIsFrontCameraActive);
-        outState.putString(SAVED_STATE_KEY_AUDIO_DEVICE, mAudioDevice.name());
-        outState.putBoolean(SAVED_STATE_KEY_KEYPAD_VISIBLE, mIsKeypadVisible);
-        outState.putSerializable(SAVED_STATE_KEY_AUDIO_DIRECTION, mAudioDirection);
-        outState.putSerializable(SAVED_STATE_KEY_VIDEO_DIRECTION, mVideoDirection);
-        outState.putBoolean(SAVED_STATE_KEY_REMOTE_VIDEO, mRemoteVideo);
-
-        mInCallManager.saveState(outState);
+//
+//        final int displayRotation = Main.getDisplay().getRotation();
+//        if (displayRotation != mDisplayRotation) {
+//            Log.d(TAG, "Device is rotating/rotated. current/new display "
+//                    + "orientation (" + displayRotation + ") doesn't match the"
+//                    + " previous/old rotation (" + mDisplayRotation + ")");
+//        }
+//        AudioDevice mAudioDevice = AudioDevice.NONE;
+//        if (mCallManager.getAudioDeviceManager() != null)
+//        {
+//            mAudioDevice = mCallManager.getAudioDeviceManager().getSelectedAudioDevice();
+//        }
+//        outState.putBoolean(SAVED_STATE_KEY_AUDIO_MUTED, mIsAudioMuted);
+//        outState.putBoolean(SAVED_STATE_KEY_VIDEO_MUTED, mIsVideoMuted);
+//        outState.putBoolean(SAVED_STATE_KEY_FRONT_CAMERA_ACTIVE, mIsFrontCameraActive);
+//        outState.putString(SAVED_STATE_KEY_AUDIO_DEVICE, mAudioDevice.name());
+//        outState.putBoolean(SAVED_STATE_KEY_KEYPAD_VISIBLE, mIsKeypadVisible);
+//        outState.putSerializable(SAVED_STATE_KEY_AUDIO_DIRECTION, mAudioDirection);
+//        outState.putSerializable(SAVED_STATE_KEY_VIDEO_DIRECTION, mVideoDirection);
+//        outState.putBoolean(SAVED_STATE_KEY_REMOTE_VIDEO, mRemoteVideo);
+//
+//        mInCallManager.saveState(outState);
     }
 
     @Override
@@ -896,7 +794,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
     private void createVideoComponents(boolean outgoingCallPending) {
         Log.d(TAG, "createVideoComponents(" + outgoingCallPending + ")");
         mVideoContainer = (RelativeLayout) findViewById(R.id.videoFrame);
-        mRemoteHeldIcon = (ImageView) findViewById(R.id.remoteCallHeld);
+//        mRemoteHeldIcon = (ImageView) findViewById(R.id.remoteCallHeld);
         mDisplayRotation = Main.getDisplay().getRotation();
 
         //clear all view
@@ -940,7 +838,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
             mPreviewView.setZOrderOnTop(true);
             // Add the preview view to the container, with a top and left margin
             RelativeLayout.LayoutParams localLp = new RelativeLayout.LayoutParams(
-                    LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                    400, 600);
             localLp.setMargins(10, 10, 0, 0);
             mPreviewView.setLayoutParams(localLp);
 
@@ -965,21 +863,11 @@ public final class InCallActivity extends Activity implements PhoneListener,
                     }
                 });
             }
-        }
-        else
-        {
+        } else {
             ((ViewGroup)mPreviewView.getParent()).removeView(mPreviewView);
         }
+
         mVideoContainer.addView(mPreviewView);
-
-        if (mRemoteHeldIcon.getParent() != null)
-        {
-            ((RelativeLayout)mRemoteHeldIcon.getParent()).removeView(mRemoteHeldIcon);
-        }
-
-        mVideoContainer.addView(mRemoteHeldIcon);
-        mRemoteHeldIcon.setVisibility(View.INVISIBLE);
-
         /*
          * We need to keep the screen on to prevent it sleeping during video
          * calls
@@ -1118,7 +1006,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
      */
     protected void showVideoContainer(final boolean showVideo) {
 	    	mVideoContainer.setVisibility(showVideo ? View.VISIBLE : View.GONE);
-	    	mDetailsContainer.setVisibility(showVideo ? View.GONE : View.VISIBLE);
+//	    	mDetailsContainer.setVisibility(showVideo ? View.GONE : View.VISIBLE);
     }
 
     /**
@@ -1254,7 +1142,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
 
                     if (mNeedToSetupVideoWhenCallEstablished) {
                     	Log.d(TAG, "IN_CALL: Setting up video");
-                    	startLocalCamera();
+//                    	startLocalCamera();
                     	mNeedToSetupVideoWhenCallEstablished = false;
                     }
                 }
@@ -1718,6 +1606,8 @@ public final class InCallActivity extends Activity implements PhoneListener,
         if (surface == mPreviewView)
         {
             Log.d(TAG, "calling setPreviewView");
+            surface.addFrameListener(this, 1F);
+
             mCallManager.setPreviewView(surface);
         }
     }
@@ -1790,13 +1680,13 @@ public final class InCallActivity extends Activity implements PhoneListener,
 
     protected  void pipToggleVisibility(final boolean showControls) {
         // Hide the full-screen UI (controls, etc.) while in picture-in-picture mode.
-        findViewById(R.id.callDetailsLayout).setVisibility((showControls) ? View.VISIBLE : View.GONE);
+//        findViewById(R.id.callDetailsLayout).setVisibility((showControls) ? View.VISIBLE : View.GONE);
         findViewById(R.id.switchesBottom).setVisibility((showControls) ? View.VISIBLE : View.GONE);
         findViewById(R.id.divider).setVisibility((showControls) ? View.VISIBLE : View.GONE);
         findViewById(R.id.switchesTop).setVisibility((showControls) ? View.VISIBLE : View.GONE);
         findViewById(R.id.dtmfKeypad).setVisibility((showControls) ? View.VISIBLE : View.GONE);
         findViewById(R.id.callQualityBar).setVisibility((showControls) ? View.VISIBLE : View.GONE);
-        findViewById(R.id.remoteCallHeld).setVisibility((showControls) ? View.VISIBLE : View.GONE);
+//        findViewById(R.id.remoteCallHeld).setVisibility((showControls) ? View.VISIBLE : View.GONE);
 
         if (!showControls)
         {
@@ -1953,10 +1843,11 @@ public final class InCallActivity extends Activity implements PhoneListener,
             if (mVideoContainer.getVisibility() != View.GONE) {
                 mVideoContainer.setVisibility(show ? View.INVISIBLE
                         : View.VISIBLE);
-            } else if (mDetailsContainer.getVisibility() != View.GONE) {
-                mDetailsContainer.setVisibility(show ? View.INVISIBLE
-                        : View.VISIBLE);
             }
+//            else if (mDetailsContainer.getVisibility() != View.GONE) {
+//                mDetailsContainer.setVisibility(show ? View.INVISIBLE
+//                        : View.VISIBLE);
+//            }
 
             if (show) {
                 mDTMFDigitsView.setText(null);
@@ -2087,14 +1978,14 @@ public final class InCallActivity extends Activity implements PhoneListener,
             for (int i = 0; i < mCallThumbnails.getChildCount(); i++)
             {
                 final View thumbnail = mCallThumbnails.getChildAt(i);
-                
+
                 if (call.getCallId().equals((String) thumbnail.getTag()))
                 {
                     return thumbnail;
                 }
             }
         }
-        
+
         return null;
     }
         
@@ -2179,11 +2070,11 @@ public final class InCallActivity extends Activity implements PhoneListener,
     /**
      * Get the latest list of current calls.
      */
-    private void updateCallsList() 
+    private void updateCallsList()
     {
-        if (mCallManager != null) 
+        if (mCallManager != null)
         {
-            mInCallManager.updateActiveCalls(mCallManager.getCurrentCalls());   
+            mInCallManager.updateActiveCalls(mCallManager.getCurrentCalls());
         }
     }
     
@@ -2198,7 +2089,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
         final View thumbnail = getThumbnailForCall(call);
         
         ProgressBar progressBar;
-        
+
         if (thumbnail != null)
         {
             //Get thumbnail quality bar
@@ -2241,7 +2132,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
      */
     private void showHeldIcon()
     {
-        mRemoteHeldIcon.setVisibility(View.VISIBLE);
+//        mRemoteHeldIcon.setVisibility(View.VISIBLE);
     }
     
     /**
@@ -2249,7 +2140,7 @@ public final class InCallActivity extends Activity implements PhoneListener,
      */
     private void hideHeldIcon()
     {
-        mRemoteHeldIcon.setVisibility(View.INVISIBLE);
+//        mRemoteHeldIcon.setVisibility(View.INVISIBLE);
     }
 
     @Override

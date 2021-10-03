@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout-land/activity_incall.xml" value="0.17291666666666666" />
+        <entry key="app/src/main/res/layout-land/activity_incall_pip.xml" value="0.4588541666666667" />
+        <entry key="app/src/main/res/layout-land/fragment_dialer.xml" value="0.32882882882882886" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_incall.xml" value="0.26015625" />
         <entry key="app/src/main/res/layout/activity_incall.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_incall_pip.xml" value="0.228125" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.228125" />
@@ -11,6 +14,7 @@
         <entry key="app/src/main/res/layout/aed_connect_topic_dialog.xml" value="0.228125" />
         <entry key="app/src/main/res/layout/aed_topic_list_item.xml" value="0.228125" />
         <entry key="app/src/main/res/layout/call_thumbnail_selected.xml" value="0.228125" />
+        <entry key="app/src/main/res/layout/call_thumbnail_unselected.xml" value="0.346875" />
         <entry key="app/src/main/res/layout/fragment_dialer.xml" value="0.228125" />
         <entry key="app/src/main/res/layout/video_toggle_button.xml" value="0.228125" />
       </map>

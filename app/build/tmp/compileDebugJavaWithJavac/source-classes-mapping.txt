@@ -2,11 +2,7 @@ com/alicecallsbob/csdk/android/sample/Main.java
  com.alicecallsbob.csdk.android.sample.Main
  com.alicecallsbob.csdk.android.sample.Main$1
  com.alicecallsbob.csdk.android.sample.Main$2
- com.alicecallsbob.csdk.android.sample.Main$3
- com.alicecallsbob.csdk.android.sample.Main$4
- com.alicecallsbob.csdk.android.sample.Main$5
  com.alicecallsbob.csdk.android.sample.Main$ActiveCallsBarListener
- com.alicecallsbob.csdk.android.sample.Main$ConnectionStateMonitor
  com.alicecallsbob.csdk.android.sample.Main$UCStartTask
 com/alicecallsbob/csdk/android/sample/LoginHandler.java
  com.alicecallsbob.csdk.android.sample.LoginHandler
@@ -54,18 +50,6 @@ com/alicecallsbob/csdk/android/sample/InCallActivity.java
 com/alicecallsbob/csdk/android/sample/SelectMediaDirectionActivity.java
  com.alicecallsbob.csdk.android.sample.SelectMediaDirectionActivity
  com.alicecallsbob.csdk.android.sample.SelectMediaDirectionActivity$MediaDirectionArrayAdapter
-com/alicecallsbob/csdk/android/sample/DialerFragment.java
- com.alicecallsbob.csdk.android.sample.DialerFragment
- com.alicecallsbob.csdk.android.sample.DialerFragment$1
- com.alicecallsbob.csdk.android.sample.DialerFragment$2
- com.alicecallsbob.csdk.android.sample.DialerFragment$3
- com.alicecallsbob.csdk.android.sample.DialerFragment$4
- com.alicecallsbob.csdk.android.sample.DialerFragment$5
- com.alicecallsbob.csdk.android.sample.DialerFragment$6
- com.alicecallsbob.csdk.android.sample.DialerFragment$7
- com.alicecallsbob.csdk.android.sample.DialerFragment$8
- com.alicecallsbob.csdk.android.sample.DialerFragment$8$1
- com.alicecallsbob.csdk.android.sample.DialerFragment$9
 com/alicecallsbob/csdk/android/sample/NullHostNameVerifier.java
  com.alicecallsbob.csdk.android.sample.NullHostNameVerifier
 com/alicecallsbob/csdk/android/sample/IncomingCallFragment.java
@@ -75,40 +59,14 @@ com/alicecallsbob/csdk/android/sample/IncomingCallFragment.java
  com.alicecallsbob.csdk.android.sample.IncomingCallFragment$2$1
 com/alicecallsbob/csdk/android/sample/NotificationHelper.java
  com.alicecallsbob.csdk.android.sample.NotificationHelper
+com/alicecallsbob/csdk/android/sample/VideoViewCustom.java
+ com.alicecallsbob.csdk.android.sample.VideoViewCustom
 com/alicecallsbob/csdk/android/sample/AEDTopicManager.java
  com.alicecallsbob.csdk.android.sample.AEDTopicManager
  com.alicecallsbob.csdk.android.sample.AEDTopicManager$TopicData
 com/alicecallsbob/csdk/android/sample/InCallManager.java
  com.alicecallsbob.csdk.android.sample.InCallManager
  com.alicecallsbob.csdk.android.sample.InCallManager$VideoSurfaceListenerWrapper
-com/alicecallsbob/csdk/android/sample/AEDFragment.java
- com.alicecallsbob.csdk.android.sample.AEDFragment
- com.alicecallsbob.csdk.android.sample.AEDFragment$1
- com.alicecallsbob.csdk.android.sample.AEDFragment$10
- com.alicecallsbob.csdk.android.sample.AEDFragment$11
- com.alicecallsbob.csdk.android.sample.AEDFragment$12
- com.alicecallsbob.csdk.android.sample.AEDFragment$13
- com.alicecallsbob.csdk.android.sample.AEDFragment$14
- com.alicecallsbob.csdk.android.sample.AEDFragment$15
- com.alicecallsbob.csdk.android.sample.AEDFragment$16
- com.alicecallsbob.csdk.android.sample.AEDFragment$17
- com.alicecallsbob.csdk.android.sample.AEDFragment$18
- com.alicecallsbob.csdk.android.sample.AEDFragment$18$1
- com.alicecallsbob.csdk.android.sample.AEDFragment$19
- com.alicecallsbob.csdk.android.sample.AEDFragment$2
- com.alicecallsbob.csdk.android.sample.AEDFragment$20
- com.alicecallsbob.csdk.android.sample.AEDFragment$21
- com.alicecallsbob.csdk.android.sample.AEDFragment$21$1
- com.alicecallsbob.csdk.android.sample.AEDFragment$22
- com.alicecallsbob.csdk.android.sample.AEDFragment$3
- com.alicecallsbob.csdk.android.sample.AEDFragment$4
- com.alicecallsbob.csdk.android.sample.AEDFragment$5
- com.alicecallsbob.csdk.android.sample.AEDFragment$6
- com.alicecallsbob.csdk.android.sample.AEDFragment$7
- com.alicecallsbob.csdk.android.sample.AEDFragment$8
- com.alicecallsbob.csdk.android.sample.AEDFragment$9
- com.alicecallsbob.csdk.android.sample.AEDFragment$TopicArrayAdapter
- com.alicecallsbob.csdk.android.sample.AEDFragment$TopicDataAdapter
 com/alicecallsbob/csdk/android/sample/User.java
  com.alicecallsbob.csdk.android.sample.User
 com/alicecallsbob/csdk/android/sample/CSDKSample.java
@@ -122,3 +80,4 @@ com/alicecallsbob/csdk/android/sample/CameraSelectionActivity.java
 com/alicecallsbob/csdk/android/sample/LoginActivity.java
  com.alicecallsbob.csdk.android.sample.LoginActivity
  com.alicecallsbob.csdk.android.sample.LoginActivity$1
+ com.alicecallsbob.csdk.android.sample.LoginActivity$UserLoginTask

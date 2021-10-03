@@ -150,7 +150,6 @@ id action_image
 id action_text
 id actions
 id activeCallsBar
-id addCallThumbnail
 id aedConnectButton
 id aedConnectDialogExpiry
 id aedConnectDialogName
@@ -184,7 +183,6 @@ id button_hash
 id button_star
 id callDetailsLayout
 id callQualityBar
-id callThumbnails
 id cameraToggleImage
 id cancel_action
 id center
@@ -203,7 +201,6 @@ id deleteDigit
 id desitnationLayout
 id dial_pad
 id divider
-id divider2
 id dtmfDigits
 id dtmfKeypad
 id end
@@ -224,14 +221,7 @@ id labelStatus
 id left
 id line1
 id line3
-id loginAddressBox
 id loginBtn
-id loginCookiesBox
-id loginHostNameBox
-id loginRenegotiationBox
-id loginSecureBox
-id login_form
-id login_status
 id media_actions
 id menu_about
 id menu_audio_direction
@@ -248,10 +238,8 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id password
 id pipToggleImage
 id realtabcontent
-id remoteCallHeld
 id right
 id right_icon
 id right_side
@@ -271,7 +259,6 @@ id switchMuteVideo
 id switchPiP
 id switchSpeaker
 id switchTorch
-id switches
 id switchesBottom
 id switchesTop
 id tag_transition_group
@@ -288,7 +275,6 @@ id top
 id topicsList
 id torchToggleImage
 id tvNumber
-id username
 id videoFrame
 id videoToggleImage
 integer cancel_button_image_alpha
@@ -296,7 +282,6 @@ integer status_bar_notification_info_maxnum
 layout active_calls_bar
 layout activity_about
 layout activity_incall
-layout activity_incall_pip
 layout activity_login
 layout add_call_thumbnail
 layout aed_connect_topic_dialog
